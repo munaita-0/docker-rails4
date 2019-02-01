@@ -12,3 +12,9 @@ web:
     - "3000:3000"
   links:
     - db
+
+nginx:
+  build: ./nginx
+  container_name: nginx
+  ports:
+    - 80:3000
